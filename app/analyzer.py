@@ -40,11 +40,11 @@ def analyze(req):
         anger_average += anger_percent
 
         sadness_tone = list(filter(lambda x: x.get('tone_id') == 'sadness', tones.get('document_tone').get('tone_categories')[0].get('tones')))
-        sadness_percent += sadness_tone[0].get('score')
+        sadness_percent = sadness_tone[0].get('score')
         sadness_average += sadness_percent
 
         disgust_tone = list(filter(lambda x: x.get('tone_id') == 'disgust', tones.get('document_tone').get('tone_categories')[0].get('tones')))
-        disgust_percent += disgust_tone[0].get('score')
+        disgust_percent = disgust_tone[0].get('score')
         disgust_average += disgust_percent
 
         score = positive_percent * 5
