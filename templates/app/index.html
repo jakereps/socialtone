@@ -4,16 +4,6 @@
 {% block content %}
   <div id="search">
     <img id="main-logo" src="{% static 'img/socialtone_main.png' %}">
-    <form class="" action="{% url 'app:search' %}" method="get">
-      <div class="input-group">
-        <input class="form-control" type="text" name="s" placeholder="Search for anything...">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="submit">Search</button>
-        </span>
-      </div>
-    </form>
-    <div id="watson">
-      <a href="https://www.ibm.com/watson/"><img src="{% static 'img/watson.png'%}" alt=""></a>
-    </div>
+    <p class="text-center">SocialTone is temporarily unavailable due to an expiration of Watson credentials.</p>
   </div>
 {% endblock %}
